@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Productos</h1>
+    <div id="products">
+        <div class="product">
+            <img src="https://img.freepik.com/vector-gratis/manzana-roja-aislado-sobre-fondo-blanco_1308-81536.jpg" alt="Manzana">
+            <h2>Manzana</h2>
+            <p>Precio: $1</p>
+            <button onclick="addToCart('Manzana', 1)">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img src="https://www.shutterstock.com/image-photo/bunch-bananas-isolated-on-white-600nw-1722111529.jpg" alt="Banana">
+            <h2>Banana</h2>
+            <p>Precio: $0.5</p>
+            <button onclick="addToCart('Banana', 0.5)">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img src="https://img.freepik.com/fotos-premium/fruta-naranja-hojas-naranja_610539-8.jpg" alt="Naranja">
+            <h2>Naranja</h2>
+            <p>Precio: $0.8</p>
+            <button onclick="addToCart('Naranja', 0.8)">Agregar al carrito</button>
+        </div>
+        <!-- Añadir más productos de frutas aquí -->
+    </div>
+
+    <h1>Carrito de Compras</h1>
+    <div id="cart">
+        <p id="emptyCart">Tu carrito está vacío</p>
+        <ul id="cartItems"></ul>
+        <p id="totalPrice"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
